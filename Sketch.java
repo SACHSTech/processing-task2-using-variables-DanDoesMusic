@@ -24,12 +24,19 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 	  
-	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
+  fill(255, 128, 0);
+  ellipse(width/4, height/4,
+        width/2, height/2);
+  ellipse((float)(width * 0.75), height/4,
+        width/2, height/2);
+ellipse(width/4, (float)(height*0.75),
+        width/2, height/2);
+ellipse((float)(width*0.75), (float)(height*0.75),
+        width/2, height/2);
 
-    stroke(255);
-    line(50, 125, 70, 50);  
+fill(255, 0, 0);
+ellipse(width/2, height/2,
+        width/2, height/2);
   }
   
   // define other methods down here.
